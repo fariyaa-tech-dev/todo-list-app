@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Resource Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- AUTH -->
+    <div id="authPage">
+        <h2>📚 Study Resource Platform</h2>
+<p style="color:gray;">Share and access study materials easily</p>
+<div class="navbar">
+    🚀 Study Resource Platform
+</div>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="subject" placeholder="Department/Branch">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- MAIN APP -->
+    <div id="appPage" style="display:none;">
+
+        <h2>Welcome</h2>
+
+        <!-- UPLOAD -->
+        <div class="box">
+            <h3>Upload Resource</h3>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="resSubject" placeholder="Subject">
+            <input type="text" id="description" placeholder="Description">
+            <input type="file" id="fileInput">
+            <input type="text" id="linkInput" placeholder="Or Paste Link">
+
+            <button onclick="uploadResource()">Upload</button>
+            
+        </div>
+
+        <!-- SEARCH -->
+        <input type="text" id="searchBox" placeholder="Search by subject or keyword..." onkeyup="searchResources()">
+
+        <!-- RESOURCES -->
+        <div id="resourceContainer"></div>
+
+        <!-- ADMIN -->
+        <div id="adminPanel" style="display:none;">
+            <h3>Admin Panel</h3>
+            <button onclick="clearAll()">Remove All Resources</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
