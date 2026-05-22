@@ -1,2 +1,3 @@
-# todo-list-app
-Small project description
+## Live Demo
+
+https://study-resource-platform.netlify.app
